@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+  	int i = 3, j = 5;
+  	int *p, *q;
+// p recebe o endereço de i
+	p = &i;
+// q recebe o endereço de j
+ 	q = &j;
+
+// p é igual ao endereço de i? após o programa realizar essa comparação é verficado que é verdadeiro pois a saída diferente de 0 como esperado
+	printf("p == &i: %d\n", p == &i);
+
+// valor de i menos valor de j resultando em -2 
+	printf("*p - *q: %d\n", *p - *q); 
+
+// valor de i que seria -3
+ 	printf("**&p: %d\n", **&p);
+
+// cálculo aritmético com i e j que resultaria no valor 10
+	printf("3 - *p/(*q) + 7: %d\n", 3 - *p/(*q) + 7);
+
+  
+  return 0;
+}
