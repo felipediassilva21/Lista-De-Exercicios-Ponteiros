@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+    char x[4] = {27, 68, 12, 51};
+    int y[4] = {27, 68, 12, 51};
+    float z[4] = {27, 68, 12, 51};
+    double w[4] = {27, 68, 12, 51};
+
+printf("Endereços:\n");
+for(int i=0; i<4; i++) {
+    printf("x[%d]: %p\n", i, &x[i]);
+}
+
+printf("\nEndereços:\n");
+for(int i=0; i<4; i++) {
+    printf("y[%d]: %p\n", i, &y[i]);
+}
+
+printf("\nEndereços:\n");
+for(int i=0; i<4; i++) {
+    printf("z[%d]: %p\n", i, &z[i]);
+}
+printf("\nEndereços:\n");
+for(int i=0; i<4; i++) {
+    printf("w[%d]: %p\n", i, &w[i]);
+}
+printf("\n");
+
+return 0;
+}

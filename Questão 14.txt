@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+// Definindo a função de comparação que será usada pelo qsort
+int compare(const void *a, const void *b) {
+    int x = *(const int *)a;  // Convertendo o ponteiro genérico a para um ponteiro para int e acessando o valor apontado
+    int y = *(const int *)b;  // Convertendo o ponteiro genérico b para um ponteiro para int e acessando o valor apontado
+    return x - y;  // Comparando e retornando a diferença entre os valores apontados
+}
+
+int main() {
+    int n = 5, i;
+    float *valores;  // Declarando um ponteiro para float que será alocado dinamicamente
+
+    // Alocando espaço na memória para o array de valores
+    valores = (float *) malloc(n * sizeof(float));
+
+    // Preenchendo o array com alguns valores
+    valores[0]=9;
+    valores[1]=5;
+    valores[2]=12;
+    valores[3]=2;
+    valores[4]=18;
+
+    // Ordenando o array usando a função qsort e a função de comparação compare
+    qsort(valores, n, sizeof(int), compare);
+
+    // Imprimindo os valores do array em ordem crescente
+    printf("Valores em ordem crescente:\n");
+    for (i = 0; i < n; i++) {
+        printf("%f ", valores[i]);
+    }
+    printf("\n");
+
+    // Liberando o espaço alocado na memória
+    free(valores);
+
+    return 0;
+}

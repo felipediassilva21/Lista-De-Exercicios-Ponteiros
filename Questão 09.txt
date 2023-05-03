@@ -1,0 +1,7 @@
+Se o vetor x de 4 elementos for declarado como char, os valores de x+1, x+2 e x+3 serão 4093, 4094 e 4095, respectivamente, já que cada elemento do vetor ocupa 1 byte.
+
+Se x for declarado como int, os valores de x+1, x+2 e x+3 serão 4094, 4096 e 4098, respectivamente, já que cada elemento do vetor ocupa 2 bytes.
+
+Se x for declarado como float, os valores de x+1, x+2 e x+3 serão 4096, 409A e 409E, respectivamente, já que cada elemento do vetor ocupa 4 bytes.
+
+Se x for declarado como double, os valores de x+1, x+2 e x+3 serão 409A, 40A2 e 40AA, respectivamente, já que cada elemento do vetor ocupa 8 bytes.

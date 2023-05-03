@@ -1,0 +1,1 @@
+A expressão que referencia melhor o valor do terceiro elemento do vetor é *(pulo + 2), pois as outras expressões também referenciam elementos do vetor pulo, mas não especificamente o terceiro elemento.

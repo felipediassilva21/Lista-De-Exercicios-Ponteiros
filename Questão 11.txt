@@ -1,0 +1,15 @@
+
+Válido:
+
+- aloha[2] = value; (atribuição de valor para o elemento do array aloha na posição 2)
+- coisas[4][4] = aloha[3]; (atribuição de valor para o elemento do array coisas na posição [4][4] com o valor do elemento do array aloha na posição 3)
+- pf = aloha; (atribuição do endereço do primeiro elemento do array aloha para o ponteiro pf)
+
+
+Inválido:
+
+- scanf("%f", &aloha); (scanf() espera um endereço de memória, não um array)
+- aloha = value; (não é possível atribuir um valor para um array)
+- printf("%f", aloha); (não é possível imprimir um array)
+- coisas[5] = aloha; (não é possível atribuir um array para outro array)
+- pf = value; (não é possível atribuir um valor float para um ponteiro)

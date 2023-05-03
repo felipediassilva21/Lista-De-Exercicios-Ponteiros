@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void ordena(float *valores, int n) {
+    int i, j;
+    float temp;
+
+    for (i = 0; i < n - 1; i++) {
+        for (j = i + 1; j < n; j++) {
+            if (valores[i] > valores[j]) {
+                temp = valores[i];
+                valores[i] = valores[j];
+                valores[j] = temp;
+            }
+        }
+    }
+}
+
+int main() {
+    int n = 5, i;
+    float *valores;
+
+
+    valores = (float *) malloc(n * sizeof(float));
+    valores[0]=9;
+    valores[1]=5;
+    valores[2]=12;
+    valores[3]=2;
+    valores[4]=18;
+
+    ordena(valores, n);
+
+    printf("Valores em ordem crescente:\n");
+    for (i = 0; i < n; i++) {
+        printf("%f ", valores[i]);
+    }
+    printf("\n");
+
+    free(valores);
+
+    return 0;
+}
+

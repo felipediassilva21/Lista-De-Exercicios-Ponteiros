@@ -1,0 +1,1 @@
+A única expressão válida é "p = mat + 1", que atribui a p o endereço de memória do segundo elemento do vetor mat. As outras expressões são inválidas e causariam erros de compilação ou comportamentos indesejados.
